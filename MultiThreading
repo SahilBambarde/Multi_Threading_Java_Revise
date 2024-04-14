@@ -1,0 +1,111 @@
+process , thread , multitasking,
+multithreading, multiprocessing
+
+creating and starting thread in java
+
+life cycle of thread
+
+thread operations , getting name, sleeping
+
+daemon thread
+
+producer and consumer problem
+
+---------------------------------------------------------------------
+
+introduction of multi threading
+
+multithreading in java is a process of executing multiple thread simultaneously.
+
+a thread is a lightweight sub-process , the smallest unit of processing
+
+----------------------------------------------------------------------
+
+Creating Thread in java
+
+Using Runnable Interface
+Using Thread Class
+
+Interface Runnable {
+run();
+}
+^
+|
+Extends
+|
+|
+class Thread {
+//Methods to work on thread
+}
+
+
+you can implement runnable interface in MyThread.class , override run method
+
+you can extend thread class in MyThread.class .
+
+java.land.Thread
+
+--------------------------------------------------------------------------
+
+starting thread in java
+
+--------------------------------------------------------------------------
+
+Thread Lifecycle
+
+New                         start()
+
+
+Runnable
+
+
+
+Running                     sleep() , suspend() , wait()                         Non-Runnable
+                                                                                 Blocked
+
+
+Terminated                  stop()
+
+
+
+----------------------------------------------------------------------------------
+
+Thread Operations
+
+Thread class provides methods to perform operation with threads.
+
+this thread class is present in java.lang package. so we dont have to import this
+package
+
+some important methods in Thread
+
+public string getName()
+public void setName(String name)
+public void run()
+public void start()
+public long getId()
+setPriority(p) , getPriority()
+sleep()
+join()
+interrupt()
+resume()
+stop()
+
+--------------------------------------------------------------
+
+Daemon Thread
+
+Daemon thread in java is a service provider thread that provides services
+to the user thread / another thread.
+
+Garbage collector is a best example for Daemon thread.
+
+setDaemon(Boolean)
+
+public boolean isDaemon()
+
+-----------------------------------------------------------------
+
+Producer Consumer Problem...
+Synchronized , Inter-thread communications
+
